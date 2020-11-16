@@ -87,6 +87,17 @@
         &-body {
             padding-left: 43px;
             margin-top: 12px;
+            img:hover {
+                z-index: 555;
+                display: block;
+                position: fixed;
+                top: 40vh;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transform: scale(20);
+                margin: 0 auto;
+            }
         }
 
         &-icon {
@@ -95,7 +106,7 @@
             left: 45px;
             @include circle;
 
-            img {
+            svg {
                 position: absolute;
                 left: 6px;
                 top: 9px;

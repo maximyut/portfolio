@@ -42,13 +42,26 @@
   .item__head:before {
     background-color: white;
   }
-  .resume__item:before {
+  .resume__column:before {
    background-color: white;
+  }
+  .resume__column {
+    ul {
+      li:after{
+        background-color: white;
+       }
+    }
+  }
+  .resume__item:before {
+    background-color: white;
   }
   .tools {
     .tool {
       border: 1px solid #ffffff;
     }
+  }
+  #Jquery {
+    fill: white;
   }
   .skills-wrapper {
     .skill__progress {
