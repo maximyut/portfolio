@@ -1,7 +1,8 @@
 .about-me {
+  padding-top: 125px;
   img {
     display: block;
-    height: 600px;
+    height: 800px;
     border: $main-color 2px solid;
   }
   &__wrapper {
@@ -16,7 +17,7 @@
     padding-left: 10px;
   }
   &__subtitle {
-    width: 300px;
+    width: 400px;
     margin-top: 6px;
   }
   &__descrp {

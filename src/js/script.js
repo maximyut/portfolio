@@ -38,12 +38,12 @@ counters.forEach((item, i) => {
   lines[i].style.width = item.innerHTML;
 });
 
+const pageUp = document.querySelector('.pageup');
 
-new fullpage('#fullpage', {
-  scrollOverflow: false,
-  scrollingSpeed: 500,
-  loopHorizontal: false,
-  controlArrows: true,
-  responsiveWidth: 768,
-  afterResponsive: function (isResponsive) {}
+document.querySelector('window').scroll(function (){
+  if (window.scrollTop() > 1600) {
+    pageUp.classList.add('active');
+  } else {
+    pageUp.classList.remove('active');
+  }
 });

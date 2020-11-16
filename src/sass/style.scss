@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -17,10 +18,21 @@
 
 
 .divider {
-    margin-top: 4px;
+    margin-top: 6px;
     width: 60px;
     height: 3px;
     background-color: $main-color;
+}
+
+.pageup {
+    width: 40px;
+    height: 40px;
+    background-color: $main-color;
+    position: fixed;
+    visibility: hidden;
+    &.active {
+        visibility: visible;
+    } 
 }
 
 
