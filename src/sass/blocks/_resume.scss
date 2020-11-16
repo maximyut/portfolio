@@ -1,0 +1,132 @@
+.resume {
+  padding-top: 50px;
+  &__title {
+    text-align: center;
+    position: relative;
+    @include circle;
+    &:before {
+      transform: translateX(4px);
+      left: auto;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  .divider {
+    margin: 25px auto;
+  }
+ 
+  &__wrapper {
+    .fp-tableCell {
+      display: grid;
+      grid-template-rows: repeat(2, 300px);
+      grid-template-columns: 1fr;
+      gap: 100px;
+      &:nth-child(2) {
+        margin-top: 500px;
+      }
+    }
+  }
+  
+  .row__title{
+    padding-bottom: 61px;
+    text-align: left;
+    position: relative;
+    @include circle;
+    &:before {
+      width: 15px;
+      height: 15px;
+      top: 50px; 
+    }
+  }
+  &__items {
+    height: 30px;
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+  .resume__item {
+    width: 575px;
+    padding-left: 60px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 124px);
+      height: 2px;
+      background-color: black;
+      top: -42px;
+      left: 15px;
+    }
+  }
+  .item {
+    &__head {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 42px;
+        background-color: black;
+        top: -40px;
+        left: 19px;
+      }
+    }
+    &__img {
+      margin-right: 20px;
+      margin-left: 10px;
+      position: relative;
+      @include circle;
+      &:before {
+        left: -8px;
+        top: -20%;
+      }
+    }
+    &__title {
+      margin: 0;
+    }
+    &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__body {
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      img:hover {
+        transform: scale(20) translateY(7px);
+      }
+    }
+  }
+  .fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent $main-color;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 50px;
+    border-color: transparent $main-color transparent transparent;
+  }
+}
+
+
+  .resume {
+    #slide2 {
+      .row__title { 
+        padding-bottom: 61px;
+        text-align: left;
+        position: relative;
+        @include circle;
+        &:before {
+          display: none;
+          width: 15px;
+          height: 15px;
+          top: 50px; 
+      }
+    }    
+  }
+}

@@ -1,0 +1,89 @@
+.darkmode-switch {
+  z-index: 8;
+  position: fixed;
+  top: 10vh;
+  right: 5vh;
+  cursor: pointer;
+  svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.darkmode {
+  background-color: black;
+  color: white;
+  transition: all 0.2s;
+  .hamburger {
+    span {
+      background-color: white;
+    }
+  }
+  svg {
+    fill: white;
+  }
+  
+  .github {
+  fill: #FFFFFF;
+  stroke: white;
+  }
+  .menu__social {
+    svg {
+      fill: black;
+      stroke: none;
+    }
+  }
+  span:after {
+    background-color: white;
+  }
+  .button, a {
+    color: white;
+  }
+  .item__head:before {
+    background-color: white;
+  }
+  .resume__item:before {
+   background-color: white;
+  }
+  .tools {
+    .tool {
+      border: 1px solid #ffffff;
+    }
+  }
+  .skills-wrapper {
+    .skill__progress {
+      border: 1px solid white;
+    }
+  }
+  .contacts {
+  &__form {
+    label {
+      background-color: black;
+      color: white;
+    }
+  }
+  &__input {
+    input {
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+  &__textarea {
+    textarea {
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+      }
+    }
+    &__policy {
+      a {
+        color: #007bff;
+      }
+    }
+  }
+}
+
+.lightmode {
+  transition: all 0.2s;
+}

@@ -1,0 +1,68 @@
+.about-me {
+  img {
+    display: block;
+    height: 600px;
+    border: $main-color 2px solid;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 400px 585px;
+    grid-template-rows: 800px;
+    justify-content: space-between;
+  }
+  &__title {
+    position: relative;
+    @include circle;
+    padding-left: 10px;
+  }
+  &__subtitle {
+    width: 300px;
+    margin-top: 6px;
+  }
+  &__descrp {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(100px, auto));
+    gap: 20px;
+  }
+  .main {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  &__items {
+    padding-top: 0px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 115px;
+    width: 250px;
+  }
+  &__text {
+    width: 200px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px
+  }        
+  &__img {
+    transform: translateY(-100%);
+    position: relative;
+    @include circle-img;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }       
+}
+
