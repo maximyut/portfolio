@@ -7,8 +7,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+
   span {
     margin-right: 100px;
+
     &:after {
       content: '';
       position: absolute;
@@ -19,11 +21,12 @@
       left: 155px;
     }
   }
-  
+
   svg {
     margin-right: 15px;
     position: relative;
     transition: transform 0.5s;
+
     &:hover {
       transform: scale(1.4);
     }

@@ -1,25 +1,31 @@
 .skills {
   padding-top: 125px;
+
   &__title {
     text-align: center;
     position: relative;
     @include circle;
+
     &:before {
       transform: translateX(40%);
       left: auto;
     }
   }
+
   &__subtitle {
     margin-top: 6px;
     text-align: center;
   }
+
   .divider {
     margin: 25px auto;
   }
+
   .tools {
     &__title {
       text-align: center;
     }
+
     &__wrapper {
       margin-top: 30px;
       display: grid;
@@ -28,13 +34,15 @@
       grid-auto-rows: 270px;
       gap: 13px;
     }
-    
+
     .tool {
       border: 1px solid #000000;
       padding: 30px 30px 25px 30px;
+
       &__title {
         margin-top: 20px;
       }
+
       &__descrp {
         margin-top: 15px;
         font-weight: 500;
@@ -43,11 +51,14 @@
       }
     }
   }
+
   .skills-wrapper {
     padding-top: 125px;
+
     &__title {
       text-align: center;
     }
+
     &__items {
       margin-top: 30px;
       display: grid;
@@ -56,32 +67,38 @@
       grid-auto-rows: 200px;
       row-gap: 30px;
       column-gap: 30px;
+
       .skill {
-        &__name{
+        &__name {
           position: relative;
           @include circle;
           padding-left: 13px;
+
           &:before {
             top: -36%;
           }
         }
+
         &__descrp {
           display: flex;
           justify-content: space-between;
         }
+
         &__percent {
           font-weight: 500;
           font-size: 14px;
           line-height: 21px;
         }
+
         &__progress {
           margin-top: 27px;
           background: #E8E4DE;
           border: 1px solid black;
           border-radius: 4px;
           width: 350px;
-          height: 14px;   
+          height: 14px;
         }
+
         &__ready {
           height: 100%;
           background: $main-color;
