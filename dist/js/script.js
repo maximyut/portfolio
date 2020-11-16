@@ -1,10 +1,10 @@
 const hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.menu'),
-      menuClose = document.querySelector('.menu__close'),
-      darkMode = document.querySelector ('#light'),
-      social =  document.querySelector('.social'),
-      body = document.querySelector('body');
-      
+  menu = document.querySelector('.menu'),
+  menuClose = document.querySelector('.menu__close'),
+  darkMode = document.querySelector('#light'),
+  social = document.querySelector('.social'),
+  body = document.querySelector('body');
+
 hamburger.addEventListener('click', () => {
   menu.classList.add('active');
   hamburger.classList.add('active');
@@ -16,12 +16,12 @@ menuClose.addEventListener('click', () => {
 });
 
 let menuLink = document.querySelectorAll('.menu__link');
-    
-[].forEach.call( menuLink, function(el) {
-    el.onclick = function(e) {
-        menu.classList.remove('active');
-        hamburger.classList.remove('active');
-    }
+
+[].forEach.call(menuLink, function (el) {
+  el.onclick = function (e) {
+    menu.classList.remove('active');
+    hamburger.classList.remove('active');
+  };
 });
 
 darkMode.addEventListener('click', () => {
@@ -32,10 +32,10 @@ darkMode.addEventListener('click', () => {
 
 
 const counters = document.querySelectorAll('.skill__percent'),
-      lines = document.querySelectorAll('.skill__progress .skill__ready');
+  lines = document.querySelectorAll('.skill__progress .skill__ready');
 
-counters.forEach( (item, i) => {
-    lines[i].style.width = item.innerHTML;
+counters.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
 });
 
 
@@ -45,8 +45,5 @@ new fullpage('#fullpage', {
   loopHorizontal: false,
   controlArrows: true,
   responsiveWidth: 768,
-  afterResponsive: function(isResponsive){
-	}
+  afterResponsive: function (isResponsive) {}
 });
-
-

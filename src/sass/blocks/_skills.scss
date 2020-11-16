@@ -17,9 +17,6 @@
     margin: 25px auto;
   }
   .tools {
-    .fp-tableCell {
-      transform: translateY(-100px);
-    }
     &__title {
       text-align: center;
     }
@@ -47,9 +44,6 @@
     }
   }
   .skills-wrapper {
-    .fp-tableCell {
-      transform: translateY(-285px);
-    }
     &__title {
       text-align: center;
     }
@@ -94,14 +88,5 @@
         }
       }
     }
-  }
-  
-  .fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent $main-color;
-    transform: s;
-  }
-  .fp-controlArrow.fp-prev {
-    left: 50px;
-    border-color: transparent $main-color transparent transparent;
   }
 }

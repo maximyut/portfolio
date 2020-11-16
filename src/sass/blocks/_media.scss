@@ -21,9 +21,6 @@
   }
   .skills {
     .tools {
-      .fp-tableCell {
-        transform: translateY(0);
-      }
       &__wrapper {
           grid-template-columns: repeat(auto-fit, 270px);
           justify-content: space-between;
@@ -31,9 +28,6 @@
     }
     
     .skills-wrapper {
-      .fp-tableCell {
-        transform: translateY(-145px);
-      }
       &__items {
         grid-template-columns: repeat(auto-fit, 350px);
         grid-auto-rows: minmax(70px, auto);
@@ -84,18 +78,12 @@
   }
   .skills {
     .skills-wrapper {
-      .fp-tableCell {
-        transform: translateY(-40px);
-      }
       &__items {
         justify-content: center;
       }
     }
   }
   .price {
-    .fp-tableCell {
-      padding-bottom: 0px;
-    }
     &__wrapper {
         grid-template-columns: repeat(auto-fit, 350px);
         padding: 0;
@@ -140,22 +128,11 @@
   }
   .skills {
     .tools {
-      .fp-tableCell {
-        transform: translateY(100px);
-      }
       &__wrapper {
           grid-template-columns: repeat(auto-fit, 270px);
           justify-content: center;
       }
     }
-    .skills-wrapper {
-      .fp-tableCell {
-        transform: translateY(-150px);
-      }
-    }
-  }
-  .fp-controlArrow {
-    visibility: hidden;
   }
   .contacts {
     padding-top: 40px;
@@ -200,13 +177,7 @@
       grid-template-columns: 1fr;
     }
   }
-  .skills {
-    .skills-wrapper {
-      .fp-tableCell {
-        transform: translateY(-65px);
-      }
-    }
-  }
+
   .contacts {
     padding-bottom: 50px;
     &__form {

@@ -15,19 +15,7 @@
   .divider {
     margin: 25px auto;
   }
- 
-  &__wrapper {
-    .fp-tableCell {
-      display: grid;
-      grid-template-rows: repeat(2, 300px);
-      grid-template-columns: 1fr;
-      gap: 100px;
-      &:nth-child(2) {
-        margin-top: 500px;
-      }
-    }
-  }
-  
+
   .row__title{
     padding-bottom: 61px;
     text-align: left;
@@ -103,13 +91,6 @@
         transform: scale(20) translateY(7px);
       }
     }
-  }
-  .fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent $main-color;
-  }
-  .fp-controlArrow.fp-prev {
-    left: 50px;
-    border-color: transparent $main-color transparent transparent;
   }
 }
 
